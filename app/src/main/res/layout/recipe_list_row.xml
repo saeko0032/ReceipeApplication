@@ -24,6 +24,7 @@
                     android:orientation="vertical">
 
                     <TextView
+                        android:id="@+id/recipe_title"
                         android:layout_width="308dp"
                         android:layout_height="wrap_content"
                         android:paddingLeft="@dimen/for_16"
@@ -32,6 +33,7 @@
                         android:textSize="24sp" />
 
                     <TextView
+                        android:id="@+id/recipe_description"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:paddingLeft="@dimen/for_16"
@@ -40,20 +42,25 @@
                 </LinearLayout>
 
                 <ImageView
+                    android:id="@+id/recipe_image"
                     android:layout_width="80dp"
                     android:layout_height="80dp"
+                    android:paddingBottom="@dimen/for_8"
                     android:layout_gravity="right|top"
                     android:paddingRight="@dimen/for_16"
                     android:paddingTop="@dimen/for_16"
-                    android:src="@drawable/recipe1" />
+                     />
             </LinearLayout>
 
             <CheckBox
+                android:id="@+id/recipe_checkbox"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:paddingLeft="@dimen/for_8" />
+                android:paddingLeft="@dimen/for_8"
+                android:paddingTop="8dp"
+                android:paddingBottom="@dimen/for_8"
+                android:paddingRight="@dimen/for_8" />
         </LinearLayout>
-
 
     </android.support.v7.widget.CardView>
 

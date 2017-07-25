@@ -101,38 +101,25 @@ public class RecipeActivity extends AppCompatActivity {
     }
 
     public void prepareRecipeData() {
-//        // 1
-//        Movie movie = new Movie("Mad Max: Fury Road", "Action & Adventure", "2015", R.drawable.movie1);
-//        movieList.add(movie);
-//        // 2
-//        movie = new Movie("Inside Out", "Animation, Kids & Family", "2015", R.drawable.movie2);
-//        movieList.add(movie);
-//        // 3
-//        movie = new Movie("The Shawshank Redemption ", "Drama", "1994", R.drawable.movie3);
-//        movieList.add(movie);
-//        // 4
-//        movie = new Movie("The Godfather ", "Drama", "1972", R.drawable.movie4);
-//        movieList.add(movie);
-//        // 5
-//        movie = new Movie("The Dark Knight", "Action & Drama", "2008", R.drawable.movie5);
-//        movieList.add(movie);
-//        // 6
-//        movie = new Movie("12 Angry Men ", "Cinema & Drama", "1957", R.drawable.movie6);
-//        movieList.add(movie);
-//        // 7
-//        movie = new Movie("Schindler's List", "Biography & History", "1993", R.drawable.movie7);
-//        movieList.add(movie);
-//        // 8
-//        movie = new Movie("Pulp Fiction", "Animation, Kids & Family", "1994", R.drawable.movie8);
-//        movieList.add(movie);
-//        // 9
-//        movie = new Movie("Fight Club", "Drama", "1999", R.drawable.movie9);
-//        movieList.add(movie);
-//        // 10
-//        movie = new Movie(" The Lord of the Ring", "Adventure & Fantasy", "2003", R.drawable.movie10);
-//        movieList.add(movie);
-//        // 11
-//        movie = new Movie("Forest Gump", "Comedy & Romance", "1994", R.drawable.movie11);
-//        movieList.add(movie);
+        Recipe recipe = new Recipe("Title 1", "rice with eggs",R.drawable.recipe1);
+        recipeList.add(recipe);
+        recipe = new Recipe("Title 2", "rice with eggs",R.drawable.recipe2);
+        recipeList.add(recipe);
+        recipe = new Recipe("Title 3", "rice with eggs",R.drawable.recipe3);
+        recipeList.add(recipe);
+        recipe = new Recipe("Title 4", "rice with eggs",R.drawable.recipe4);
+        recipeList.add(recipe);
+        recipe = new Recipe("Title 5", "rice with eggs",R.drawable.recipe5);
+        recipeList.add(recipe);
+        recipe = new Recipe("Title 6", "rice with eggs",R.drawable.recipe6);
+        recipeList.add(recipe);
+        recipe = new Recipe("Title 7", "rice with eggs",R.drawable.recipe7);
+        recipeList.add(recipe);
+        recipe = new Recipe("Title 8", "rice with eggs",R.drawable.recipe8);
+        recipeList.add(recipe);
+        recipe = new Recipe("Title 9", "rice with eggs",R.drawable.recipe9);
+        recipeList.add(recipe);
+        recipe = new Recipe("Title 10", "rice with eggs",R.drawable.recipe10);
+        recipeList.add(recipe);
     }
 }

@@ -10,11 +10,11 @@ public class Recipe {
     private int imgId;
     private boolean isChecked;
 
-    public Recipe(String title, String description, int imgId, boolean isChecked) {
+    public Recipe(String title, String description, int imgId) {
         this.title = title;
         this.description = description;
         this.imgId = imgId;
-        this.isChecked = isChecked;
+        this.isChecked = false;
     }
 
     public String getTitle() {

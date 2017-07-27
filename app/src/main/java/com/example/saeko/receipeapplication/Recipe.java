@@ -1,10 +1,12 @@
 package com.example.saeko.receipeapplication;
 
+import java.io.Serializable;
+
 /**
  * Created by fukuisaeko on 2017-07-24.
  */
 
-public class Recipe {
+public class Recipe implements Serializable {
     private String title;
     private String description;
     private int imgId;

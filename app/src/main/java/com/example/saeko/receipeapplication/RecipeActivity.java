@@ -101,25 +101,26 @@ public class RecipeActivity extends AppCompatActivity {
     }
 
     public void prepareRecipeData() {
-        Recipe recipe = new Recipe("Baked Vegi", "vegi + coco oil",R.drawable.recipe1);
+        Recipe recipe = new Recipe("Baked Vegi", "vegi + coco oil",R.drawable.recipe1,"1.To mixed vegis with coconut oil \n2.To baked it with 400D for 25 mins");
         recipeList.add(recipe);
-        recipe = new Recipe("Ice noodle", "eggs + noodle",R.drawable.recipe2);
+        recipe = new Recipe("Ice noodle", "eggs + noodle",R.drawable.recipe2, "1. To boil eggs noodle \n2. To add some ingrediends and mixed well ");
         recipeList.add(recipe);
-        recipe = new Recipe("Seafood salad", "seafood + vegi",R.drawable.recipe3);
+        recipe = new Recipe("Seafood salad", "seafood + vegi",R.drawable.recipe3, "1. To boil eggs noodle \n2. To add some ingrediends and mixed well ");
         recipeList.add(recipe);
-        recipe = new Recipe("Chirashi don", "seafood + rice",R.drawable.recipe4);
+        recipe = new Recipe("Chirashi don", "seafood + rice",R.drawable.recipe4, "1. To steam rice \n2. To add some sushimi ingrediends ");
         recipeList.add(recipe);
-        recipe = new Recipe("Boiled egg", "eggs",R.drawable.recipe5);
+        recipe = new Recipe("Boiled egg", "eggs",R.drawable.recipe5, "1. To boil eggs with 8mins");
         recipeList.add(recipe);
-        recipe = new Recipe("Niku Udon", "meat + noodle",R.drawable.recipe6);
+        recipe = new Recipe("Niku Udon", "meat + noodle",R.drawable.recipe6, "1. To boil udon noodle \n2. eat with dashi soup");
         recipeList.add(recipe);
-        recipe = new Recipe("Oyako don", "chicken +  eggs",R.drawable.recipe7);
+        recipe = new Recipe("Oyako don", "chicken +  eggs",R.drawable.recipe7, "1. To steam rice \n2. To boil checkin in dashi soup \n 3. To mix well");
         recipeList.add(recipe);
-        recipe = new Recipe("Carbonara", "eggs + pasta + cheese",R.drawable.recipe8);
+        recipe = new Recipe("Carbonara", "eggs + pasta + cheese",R.drawable.recipe8, "1. To boild pasta \n2. To mix with eggs and cheese");
         recipeList.add(recipe);
-        recipe = new Recipe("Chawan mushi", "eggs",R.drawable.recipe9);
+        recipe = new Recipe("Chawan mushi", "eggs",R.drawable.recipe9, "1. To steam eggs and dashi soup for 10mins");
+
         recipeList.add(recipe);
-        recipe = new Recipe("Pizza", "go buy princess",R.drawable.recipe10);
+        recipe = new Recipe("Pizza", "go buy princess",R.drawable.recipe10, "1. To go to steeveston pizza \n2. To order pizza!");
         recipeList.add(recipe);
     }
 

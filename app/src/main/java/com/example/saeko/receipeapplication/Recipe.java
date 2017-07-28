@@ -11,12 +11,15 @@ public class Recipe implements Serializable {
     private String description;
     private int imgId;
     private boolean isChecked;
+    private String process;
 
-    public Recipe(String title, String description, int imgId) {
+    public Recipe(String title, String description, int imgId, String process) {
         this.title = title;
         this.description = description;
         this.imgId = imgId;
         this.isChecked = false;
+        this.process = process;
+
     }
 
     public String getTitle() {
@@ -49,5 +52,13 @@ public class Recipe implements Serializable {
 
     public void setChecked(boolean checked) {
         isChecked = checked;
+    }
+
+    public String getProcess() {
+        return process;
+    }
+
+    public void setProcess(String process) {
+        this.process = process;
     }
 }

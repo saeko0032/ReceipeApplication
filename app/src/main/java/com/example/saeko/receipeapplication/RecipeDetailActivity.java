@@ -35,7 +35,7 @@ public class RecipeDetailActivity extends AppCompatActivity {
         detailImage.setImageResource(recipe.getImgId());
         detailTitle.setText(recipe.getTitle());
         detailDescription.setText(recipe.getDescription());
-        detailRule.setText("aiueo");
+        detailRule.setText(recipe.getProcess());
 
     }
 }

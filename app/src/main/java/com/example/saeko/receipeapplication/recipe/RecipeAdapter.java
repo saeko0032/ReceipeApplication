@@ -1,4 +1,4 @@
-package com.example.saeko.receipeapplication;
+package com.example.saeko.receipeapplication.recipe;
 
 import android.content.Context;
 import android.content.Intent;
@@ -10,7 +10,7 @@ import android.widget.CheckBox;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import org.w3c.dom.Text;
+import com.example.saeko.receipeapplication.R;
 
 import java.util.List;
 

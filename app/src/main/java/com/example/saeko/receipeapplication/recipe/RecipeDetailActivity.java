@@ -1,13 +1,12 @@
-package com.example.saeko.receipeapplication;
+package com.example.saeko.receipeapplication.recipe;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import org.w3c.dom.Text;
+import com.example.saeko.receipeapplication.R;
 
 /**
  * Created by saeko on 7/27/2017.

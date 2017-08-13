@@ -1,4 +1,4 @@
-package com.example.saeko.receipeapplication;
+package com.example.saeko.receipeapplication.recipe;
 
 import java.io.Serializable;
 

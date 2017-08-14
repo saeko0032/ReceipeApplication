@@ -50,6 +50,9 @@ public class MusicActivity extends AppCompatActivity {
 
             @Override
             public void onClick(View view) {
+                if (mediaPlayer == null) {
+                    mediaPlayer = MediaPlayer.create(MusicActivity.this, R.raw.shapeofyou);
+                }
                 if (!play_reset) {
                     mediaPlayer.stop();
                     playBtn.setImageResource(R.drawable.play);
@@ -68,6 +71,10 @@ public class MusicActivity extends AppCompatActivity {
 
             @Override
             public void onClick(View view) {
+                if (mediaPlayer == null) {
+                    mediaPlayer = MediaPlayer.create(MusicActivity.this, R.raw.shapeofyou);
+                }
+
                 mediaPlayer.reset();
                 playBtn.setImageResource(R.drawable.play);
                 Toast.makeText(MusicActivity.this, "reset", Toast.LENGTH_SHORT).show();
@@ -80,11 +87,16 @@ public class MusicActivity extends AppCompatActivity {
     @Override
     public void onPause() {
         super.onPause();
+        if (mediaPlayer == null) {
+            mediaPlayer = MediaPlayer.create(MusicActivity.this, R.raw.shapeofyou);
+        }
+
         mediaPlayer.reset();
 
         playBtn.setImageResource(R.drawable.play);
         Toast.makeText(MusicActivity.this, "reset", Toast.LENGTH_SHORT).show();
         mediaPlayer.release();
+        mediaPlayer = null;
         play_reset = true;
     }
 

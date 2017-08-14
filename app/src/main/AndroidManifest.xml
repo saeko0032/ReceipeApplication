@@ -22,5 +22,11 @@
             </intent-filter>
         </activity>
         <service android:name=".song.MusicService" />
+        <service android:name=".song.MediaPlaybackService"
+            android:label="music service">
+            <intent-filter>
+                <action android:name="android.media.browse.MediaBrowserService" />
+            </intent-filter>
+        </service>
     </application>
 </manifest>

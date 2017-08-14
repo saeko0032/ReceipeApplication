@@ -9,7 +9,6 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.example.saeko.receipeapplication.R;
-import com.example.saeko.receipeapplication.Song;
 
 import java.util.ArrayList;
 

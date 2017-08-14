@@ -11,7 +11,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.widget.ListView;
 
 import com.example.saeko.receipeapplication.R;
-import com.example.saeko.receipeapplication.Song;
 
 import java.util.ArrayList;
 import java.util.Collections;

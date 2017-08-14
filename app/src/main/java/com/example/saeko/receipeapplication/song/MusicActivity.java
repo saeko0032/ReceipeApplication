@@ -1,5 +1,6 @@
 package com.example.saeko.receipeapplication.song;
 
+import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -28,7 +29,6 @@ public class MusicActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_music);
 
-        mediaPlayer = MediaPlayer.create(this, R.raw.shapeofyou);
 
         playBtn = (ImageButton) this.findViewById(R.id.play);
         stopBtn = (ImageButton) this.findViewById(R.id.stop);
@@ -39,32 +39,36 @@ public class MusicActivity extends AppCompatActivity {
 
             @Override
             public void onClick(View view) {
-                if(play_reset) {
-                    play_reset = false;
-                    mediaPlayer.setLooping(false);
-                }
-                playPause();
+                Intent i = new Intent(MusicService.ACTION_PLAY);
+                startService(i);
+//                if(play_reset) {
+//                    play_reset = false;
+//                    mediaPlayer.setLooping(false);
+//                }
+//                playPause();
             }
         });
         stopBtn.setOnClickListener(new View.OnClickListener(){
 
             @Override
             public void onClick(View view) {
-                if (mediaPlayer == null) {
-                    mediaPlayer = MediaPlayer.create(MusicActivity.this, R.raw.shapeofyou);
-                }
-                if (!play_reset) {
-                    mediaPlayer.stop();
-                    playBtn.setImageResource(R.drawable.play);
-                    Toast.makeText(MusicActivity.this, "stopped", Toast.LENGTH_LONG).show();
-                    try {
-                        mediaPlayer.prepare();
-                    } catch (IllegalStateException ex) {
-                        ex.printStackTrace();
-                    } catch (IOException ex) {
-                        ex.printStackTrace();
-                    }
-                }
+                Intent i = new Intent(MusicService.ACTION_PLAY);
+                startService(i);
+//                if (mediaPlayer == null) {
+//                    mediaPlayer = MediaPlayer.create(MusicActivity.this, R.raw.shapeofyou);
+//                }
+//                if (!play_reset) {
+//                    mediaPlayer.stop();
+//                    playBtn.setImageResource(R.drawable.play);
+//                    Toast.makeText(MusicActivity.this, "stopped", Toast.LENGTH_LONG).show();
+//                    try {
+//                        mediaPlayer.prepare();
+//                    } catch (IllegalStateException ex) {
+//                        ex.printStackTrace();
+//                    } catch (IOException ex) {
+//                        ex.printStackTrace();
+//                    }
+//                }
             }
         });
         resetBtn.setOnClickListener(new View.OnClickListener(){

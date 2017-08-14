@@ -1,4 +1,4 @@
-package com.example.saeko.receipeapplication;
+package com.example.saeko.receipeapplication.song;
 
 /**
  * Created by fukuisaeko on 2017-08-12.

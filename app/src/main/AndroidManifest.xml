@@ -21,11 +21,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <service android:name=".song.MusicService" />
-        <service android:name=".song.MediaPlaybackService"
+        <service android:name=".song.MusicService"
             android:label="music service">
             <intent-filter>
-                <action android:name="android.media.browse.MediaBrowserService" />
+                <action android:name="com.media.action.PLAY" />
             </intent-filter>
         </service>
     </application>
